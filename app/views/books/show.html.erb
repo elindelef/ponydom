@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag(@book.cover) %>
+<ul>
+    <li><%= @book.title %></li>
+    <li><%= @book.author %></li>
+    <li><%= @book.genre %></li>
+    <li><%= @book.copyright %></li>
+    <li><%= @book.isbn %></li>
+    <li><%= @book.discipline %></li>
+    <li><%= @book.pages %></li>
+    <li><%= @book.series %></li>
+    <li><%= @book.horse_connection %></li>
+    <li><%= @book.in_print %></li>
+    <li><%= @book.publisher %></li>
+    <li><%= @book.illustrator %></li>
+    <li><%= @book.description %></li>
+</ul>
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
